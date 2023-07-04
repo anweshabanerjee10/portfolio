@@ -2,13 +2,16 @@ import "./topbar.scss";
 
 import EmailIcon from "@mui/icons-material/Email";
 
-const Topbar = () => {
+const Topbar = ({ menuOpen, setMenuOpen }) => {
+  const handleClick = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
-    <div className="topbar ">
+    <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            .genius
+            .Anwesha
           </a>
 
           <div className="itemContainer">
@@ -18,7 +21,7 @@ const Topbar = () => {
         </div>
 
         <div className="right">
-          <div className="hamburger">
+          <div className="hamburger" onClick={handleClick}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
