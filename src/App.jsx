@@ -25,7 +25,6 @@ function App() {
         <Works />
         <Skills />
         <Contact />
-        <Contact />
       </div>
     </div>
   );
