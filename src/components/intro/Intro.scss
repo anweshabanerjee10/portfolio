@@ -12,28 +12,43 @@
     .left{
         flex: 1;
         overflow: hidden;
+        margin-right: 200px;
+      
         .imgContainer{
 
-            width: 700px;
-            height: 700px;
-        background-color:rgb(181, 194, 199);
+            width: 500px;
+            height: 600px;
+        background-color:rgb(146, 183, 212);
+       
         border-radius: 50%;
         display: flex;
         align-items: flex-end;
         justify-content: center;
         float: right;
+      
         @include mobile {
 
-            align-items: flex-start;
+        align-items: flex-start;
+        
+          width: 100%;
+          margin-left: 400px;
+          margin-right: -100px;
+         border-radius: 50%;
+           
         }
 
             img{
 
-                height: 90%;
+                height: 80%;
+              
 
                 @include mobile{
 
-                    height: 50%;
+                    height:60%;
+                    
+                    margin-left: 120px;
+                  
+                 
                 }
               
                
