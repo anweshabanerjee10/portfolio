@@ -12,15 +12,17 @@
     .left{
         flex: 1;
         overflow: hidden;
-        margin-right: 200px;
+        margin-right: 100px;
+        margin-top: 40px;
+     
       
         .imgContainer{
 
-            width: 500px;
-            height: 600px;
-        background-color:rgb(146, 183, 212);
+            width: 700px;
+            height: 500px;
        
-        border-radius: 50%;
+       
+        border-radius: 40%;
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -31,16 +33,15 @@
         align-items: flex-start;
         
           width: 100%;
-          margin-left: 400px;
-          margin-right: -100px;
-         border-radius: 50%;
-           
+          margin-left: 300px;
+        
         }
 
             img{
 
-                height: 80%;
-              
+                height: 90%;
+               
+             
 
                 @include mobile{
 

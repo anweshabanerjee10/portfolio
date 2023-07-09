@@ -25,7 +25,12 @@ const Intro = () => {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src={"/assests/me1.png"} alt="" />
+          <img
+            src={
+              "https://blog.planview.com/wp-content/uploads/2020/01/Top-6-Software-Development-Methodologies.jpg"
+            }
+            alt=""
+          />
         </div>
       </div>
       <div className="right">
