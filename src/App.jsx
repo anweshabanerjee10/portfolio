@@ -12,6 +12,7 @@ import { useState } from "react";
 
 import "./app.scss";
 import Menu from "./components/menu/Menu.jsx";
+import About from "./components/about/About.jsx";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -21,6 +22,7 @@ function App() {
 
       <div className="sections">
         <Intro />
+        <About />
         <Portfolio />
         <Works />
         <Skills />

@@ -4,7 +4,7 @@ import { send } from "emailjs-com";
 import { useState } from "react";
 
 const Contact = () => {
-  const [message, setMessage] = useState(false);
+  const [message, setMessage] = useState("");
   const [sender_email, setSender_email] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
