@@ -3,14 +3,9 @@ import PortFolioList from "../portFolioList/portFolioList";
 
 import { useState, useEffect } from "react";
 
-import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-} from "../../data";
+import { projectsData, projectsNav } from "../../data";
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("projectsData");
   const [data, setData] = useState([]);
 
   const list = [
@@ -35,22 +30,22 @@ export default function Portfolio() {
   useEffect(() => {
     return () => {
       switch (selected) {
-        case "featured":
-          setData(featuredPortfolio);
+        case "projectsData":
+          setData(projectsData);
           break;
-        case "web":
-          setData(webPortfolio);
-          break;
-        case "mobile":
-          setData(mobilePortfolio);
-          break;
+        // case "web":
+        //   setData(webPortfolio);
+        //   break;
+        // case "mobile":
+        //   setData(mobilePortfolio);
+        //   break;
 
-        case "design":
-          setData(designPortfolio);
-          break;
+        // case "design":
+        //   setData(designPortfolio);
+        //   break;
 
         default:
-          setData(featuredPortfolio);
+          setData(projectsData);
           break;
       }
     };
@@ -60,7 +55,7 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
-        {list.map((item) => (
+        {projectsNav.map((item) => (
           <li>
             <PortFolioList
               key={item.id}
