@@ -14,20 +14,20 @@ export const projectsData = [
     deploymentLink:
       'https://restaurant-anweshabanerjeecse23-heritageite.vercel.app/',
   },
-  // {
-  //   id: 2,
-  //   image: Work2,
-  //   title: "Text Analyzer",
-  //   category: "web",
-  //   deploymentLink: "https://text-analyzer-nine.vercel.app/",
-  // },
-  // {
-  //   id: 3,
-  //   image: Work3,
-  //   title: "Snake Game",
-  //   category: "web",
-  //   deploymentLink: "https://dishant-62.github.io/Snake-Game/",
-  // },
+  {
+    id: 2,
+    image: '/assests/work2.png',
+    title: 'Tic-tac-toe',
+    category: 'games',
+    deploymentLink: 'https://jagged-seat.surge.sh/',
+  },
+  {
+    id: 3,
+    image: '/assests/work3.png',
+    title: 'iNotebook',
+    category: 'web',
+    deploymentLink: 'https://inotebook-ten-gold.vercel.app/login',
+  },
   // {
   //   id: 4,
   //   image: Work4,
@@ -66,6 +66,6 @@ export const projectsNav = [
     name: 'web',
   },
   {
-    name: 'design',
+    name: 'games',
   },
 ]

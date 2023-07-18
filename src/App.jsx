@@ -1,9 +1,5 @@
 import Topbar from "./components/topbar/Topbar.jsx";
 
-import Portfolio from "./components/portfolio/Portfolio";
-
-import Works from "./components/works/Works";
-
 import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 
@@ -13,6 +9,7 @@ import "./app.scss";
 import Menu from "./components/menu/Menu.jsx";
 import About from "./components/about/About.jsx";
 import Home from "./components/intro/Home.jsx";
+import Work from "./components/portfolio/Work.jsx";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,8 +21,8 @@ function App() {
       <div className="sections">
         <Home />
         <About />
-        <Portfolio />
-        <Works />
+        <Work />
+
         <Skills />
         <Contact />
       </div>
