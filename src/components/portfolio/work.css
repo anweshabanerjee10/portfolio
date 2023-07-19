@@ -111,11 +111,15 @@
 
 @media screen and (max-width: 576px) {
     .work__container {
-        grid-template-columns: 1fr;
+
+
+        flex-direction: column;
+        padding: 15px 15px;
     }
 
     .work__img {
         width: 100%;
+
     }
 }
 
